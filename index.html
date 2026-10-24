@@ -1,34 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-		@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-	</style>
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-
-	<link rel="icon" type="image/png" sizes="32x32" href="img/icon.png">
-	<title> À mon Orchidée </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <style>
+   
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+    </style>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon.png">   
 </head>
-<body>
-	<h1 class="dancing-script titre">
-		<span style="background-color: yellow;">
-		À l'attention de Marguérita SENGA-NATUREL
-		</span>
-	</h1>
-	
+<body class="dancing-script titre">
 
-	<a href="lettre.html">
-	<div class = "Fleur-Accueil">
-		<img src="img/fleur_1.png" style = "width : 235px"; height : 235px;>
-		</a>
-	</div>
-	
-</body>
+    
+    <div class="login-box">
+        <h2 style="background-color: yellow;">Se connecter</h2>
+        
+        <form action="#" method="POST">
+        
+            <div class="input-group">
+                <label for="username">Entre ton nom</label>
+                <input type="text" id="username" name="username" placeholder="Votre nom d'utilisateur" required>
+            </div>
+
+            
+            <div class="input-group">
+                <label for="password">Mdp secret ?</label>
+                <input type="password" id="password" name="password" placeholder="Votre mot de passe" required>
+            </div>
+
+            
+            <button id="loginBtn" onclick="B"> Connexion </button>
+        </form>
+    </div>
 <link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+<script src="script.js"></script>
+</body>
 </html>
